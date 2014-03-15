@@ -1,2 +1,2 @@
 language: objective-c
-script: xctool -project Demo/RPSlidingMenuDemo/RPSlidingMenuDemo.xcodeproj -scheme RPSlidingMenuDemo build
+script: xctool -project Demo/RPSlidingMenuDemo/RPSlidingMenuDemo.xcodeproj -scheme RPSlidingMenuDemo build -sdk iphonesimulator
