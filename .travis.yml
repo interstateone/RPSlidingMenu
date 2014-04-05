@@ -1,2 +1,4 @@
 language: objective-c
-script: xctool -project Demo/RPSlidingMenuDemo/RPSlidingMenuDemo.xcodeproj -scheme RPSlidingMenuDemo build -sdk iphonesimulator
+script:
+    - xctool -project Demo/RPSlidingMenuDemo/RPSlidingMenuDemo.xcodeproj -scheme RPSlidingMenuDemo build -sdk iphonesimulator -reporter json-compilation-database:compile_commands.json
+    - oclint-json-compilation-database
